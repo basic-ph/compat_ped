@@ -1,0 +1,12 @@
+name = "ACE Compat - PedagneMod";
+picture = "logo_cped_ca.paa";
+actionName = "GitHub";
+action = "https://github.com/basic-ph/compat_ped";
+description = "ACE Compatibility - PedagneMod";
+logo = "logo_cped_ca.paa";
+logoOver = "logo_cped_ca.paa";
+tooltip = "ACE Compat - PedagneMod";
+tooltipOwned = "ACE Compat - PedagneMod Owned";
+overview = "Provides compatibility between ACE3 and PedagneMod";
+author = "basic-ph";
+overviewPicture = "logo_ace3_ca.paa";
