@@ -5,6 +5,38 @@ transportRepair = 0;
 */
 class CfgVehicles {
 
+    // Tracked
+    class Tank;
+    class ASZ_Tank;
+    class ASZ_Ariete: ASZ_Tank {
+        ace_refuel_fuelCapacity = 1200; // to be found
+    };
+    class ASZ_Leopard: ASZ_Ariete {
+        ace_refuel_fuelCapacity = 0; // to be found
+    };
+    class ASZ_VCC2_EI: ASZ_Tank {
+        ace_refuel_fuelCapacity = 330;
+    };
+    class ASZ_VCC1_EI: ASZ_VCC2_EI {
+        ace_refuel_fuelCapacity = 360;
+    };
+    class ASZ_VCC1_MM: ASZ_VCC2_EI {
+        ace_refuel_fuelCapacity = 360;
+    };
+    class ASZ_ArisGator_M2: ASZ_VCC2_EI {
+        ace_refuel_fuelCapacity = 0; // to be found
+    };
+    class ASZ_LVTP7_EI: ASZ_Tank {
+        ace_refuel_fuelCapacity = 680;
+    };
+    class ASZ_SIDAM: ASZ_VCC2_EI {
+        ace_refuel_fuelCapacity = 360;
+    };
+    class ASZ_M548_ammo: ASZ_Tank { // NOT FOUND IN GAME
+        ace_refuel_fuelCapacity = 397; // check ammo supply question
+    };
+
+
     class ASZ_Car_Base;
     class ASZ_LR90_EI: ASZ_Car_Base {
         ace_refuel_fuelCapacity = 60;
