@@ -353,4 +353,31 @@ class CfgWeapons {
     // class ASZ_Bipod_MG3: ItemCore
     // class ASZ_Bipod_AR7090: ItemCore
     // class ASZ_Bipod_tac50: ItemCore
+
+    // ARX7090
+    class Rifle_Base_F;
+    class UGL_F;
+    class ASZ_AR7090_base: Rifle_Base_F {
+        ACE_barrelTwist = 177.8;
+        ACE_barrelLength = 450; 
+        ACE_twistDirection = 1; // Right handed is 1, Left is -1, none is 0 ,default is 1 
+    };
+        class ASZ_AR7090: ASZ_AR7090_base
+            class ASZ_AR7090_rd: ASZ_AR7090
+            class ASZ_AR7090_ag: ASZ_AR7090 // Beretta AR 70/90 Acog
+            class ASZ_AR7090_gl: ASZ_AR7090
+            class ASZ_AR7090_scoped: ASZ_AR7090 //Beretta AR 70/90 Sharpshooter
+                class ASZ_AR7090_scoped_sd: ASZ_AR7090_scoped // Beretta AR 70/90 Sharpshooter SD
+        class ASZ_SC90: ASZ_AR7090_base // Beretta SC 70/90
+            class ASZ_SC90_rd: ASZ_SC90
+            class ASZ_SC90_rd: ASZ_SC90
+            class ASZ_SC90_ag: ASZ_SC90
+            class ASZ_SC90_gl: ASZ_SC90
+            class ASZ_SC90_gl_ag: ASZ_SC90_gl
+        class ASZ_SCS90: ASZ_AR7090_base
+            class ASZ_SCS90_rd: ASZ_SCS90
+                class ASZ_SCS90_rd_sd: ASZ_SCS90_rd
+                class ASZ_SCS90_rd_2: ASZ_SCS90_rd
+                    class ASZ_SCS90_rd_2_sd: ASZ_SCS90_rd_2
+        
 };
