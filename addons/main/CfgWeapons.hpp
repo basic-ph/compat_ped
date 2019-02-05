@@ -354,9 +354,8 @@ class CfgWeapons {
     // class ASZ_Bipod_AR7090: ItemCore
     // class ASZ_Bipod_tac50: ItemCore
 
-    // ARX7090
+    //ARX7090
     class Rifle_Base_F;
-    class UGL_F;
     class ASZ_AR7090_base: Rifle_Base_F {
         ACE_barrelTwist = 177.8;
         ACE_barrelLength = 450; 
@@ -379,5 +378,59 @@ class CfgWeapons {
                 class ASZ_SCS90_rd_sd: ASZ_SCS90_rd
                 class ASZ_SCS90_rd_2: ASZ_SCS90_rd
                     class ASZ_SCS90_rd_2_sd: ASZ_SCS90_rd_2
-        
+    // ARX160 (https://www.militarypedia.it/beretta-arx-160-e-varianti/)
+    class ASZ_ARX160_base: Rifle_Base_F {
+        ACE_barrelTwist = 177.8; // 1:7in twist
+        ACE_barrelLength = 406; 
+        ACE_twistDirection = 1; // Right handed is 1, Left is -1, none is 0 ,default is 1 
+    };
+    class ASZ_ARX160;
+    class ASZ_ARX160_GLS_CC: ASZ_ARX160 { // short
+        ACE_barrelLength = 305;
+    };
+    class ASZ_ARX160_IV_L_CC: ASZ_ARX160 { // Vertical grip - short
+        ACE_barrelLength = 305;
+    };
+    class ASZ_ARX160SF_CC: ASZ_ARX160 { // short
+        ACE_barrelLength = 305;
+    };       
+    class ASZ_ARX160SF_GLS_CC: ASZ_ARX160 { // short
+        ACE_barrelLength = 305;
+    };
+    class ASZ_ARX160SF_IV_L_CC: ASZ_ARX160 { // short
+        ACE_barrelLength = 305;
+    };
+    // ARX200
+    class srifle_DMR_03_F;
+    class APD_ARX200_base: srifle_DMR_03_F {
+        ACE_barrelTwist = 177.8; // 1:7in twist
+        ACE_barrelLength = 406; 
+        ACE_twistDirection = 1;
+    };
+    // BM59
+    class ASZ_FALBM59_base: Rifle_Base_F {
+        ACE_barrelTwist = 177.8;
+        ACE_barrelLength = 491; // PedagneMod
+        ACE_twistDirection = 1;
+    };
+    // M-GUN (Machine gun)
+    class Rifle_Long_Base_F;
+    class ASZ_M249_base: Rifle_Long_Base_F {
+        ACE_barrelTwist = 177.8;
+        ACE_barrelLength = 414.02; // Pedagne value -- online:465mm
+        ACE_twistDirection = 1;
+        ACE_Overheating_allowSwapBarrel = 1;
+    };
+    class ASZ_M249mk1_base: Rifle_Long_Base_F {
+        ACE_barrelTwist = 177.8;
+        ACE_barrelLength = 414.02; // Pedagne value -- online:465mm
+        ACE_twistDirection = 1;
+        ACE_Overheating_allowSwapBarrel = 1;
+    };
+    class ASZ_RH_MG3_base: Rifle_Long_Base_F {
+        ACE_barrelTwist = 305;
+        ACE_barrelLength = 565;
+        ACE_twistDirection = 1;
+        ACE_Overheating_allowSwapBarrel = 1;
+    };
 };
