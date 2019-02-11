@@ -9,4 +9,4 @@ tooltip = "ACE Compat - PedagneMod";
 tooltipOwned = "ACE Compat - PedagneMod Owned";
 overview = "Provides compatibility between ACE3 and PedagneMod";
 author = "basic-ph";
-overviewPicture = "logo_ace3_ca.paa";
+overviewPicture = "logo_cped_ca.paa";
