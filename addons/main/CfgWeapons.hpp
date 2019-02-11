@@ -77,13 +77,12 @@ class CfgWeapons {
 	class autocannon_35mm;
 	class MissileLauncher;
 	class RocketPods;
-	class MGunCore;
 	class HMG_127;
 	class LMG_RCWS;
 	class HMG_01;
 	class HMG_M2;
 	class GMG_20mm;
-    class MGun: MGunCore;
+    class MGun;
 
     // class Sidewinder_Laucher8_ASZ: MissileLauncher
     // class Sidewinder_Laucher4_ASZ: Sidewinder_Laucher8_ASZ
@@ -156,8 +155,7 @@ class CfgWeapons {
 
     // Weapons
     // AA
-    class Launcher;
-    class Launcher_Base_F: Launcher;
+    class Launcher_Base_F;
     class ASZ_Launch_Stinger: Launcher_Base_F {
         ace_overpressure_angle = 45;
 		ace_overpressure_range = 15;
@@ -173,7 +171,7 @@ class CfgWeapons {
 		ace_overpressure_range = 2;
 		ace_overpressure_damage = 0.5;
     };
-    class ASZ_SWM_pzfaust3_base: Launcher_Base_F;
+    class ASZ_SWM_pzfaust3_base;
     class ASZ_SWM_pzfaust3: ASZ_SWM_pzfaust3_base { // values taken from BWA compat
         ACE_overpressure_angle = 60;
         ACE_overpressure_range = 3.5;
@@ -361,23 +359,23 @@ class CfgWeapons {
         ACE_barrelLength = 450; 
         ACE_twistDirection = 1; // Right handed is 1, Left is -1, none is 0 ,default is 1 
     };
-        class ASZ_AR7090: ASZ_AR7090_base
-            class ASZ_AR7090_rd: ASZ_AR7090
-            class ASZ_AR7090_ag: ASZ_AR7090 // Beretta AR 70/90 Acog
-            class ASZ_AR7090_gl: ASZ_AR7090
-            class ASZ_AR7090_scoped: ASZ_AR7090 //Beretta AR 70/90 Sharpshooter
-                class ASZ_AR7090_scoped_sd: ASZ_AR7090_scoped // Beretta AR 70/90 Sharpshooter SD
-        class ASZ_SC90: ASZ_AR7090_base // Beretta SC 70/90
-            class ASZ_SC90_rd: ASZ_SC90
-            class ASZ_SC90_rd: ASZ_SC90
-            class ASZ_SC90_ag: ASZ_SC90
-            class ASZ_SC90_gl: ASZ_SC90
-            class ASZ_SC90_gl_ag: ASZ_SC90_gl
-        class ASZ_SCS90: ASZ_AR7090_base
-            class ASZ_SCS90_rd: ASZ_SCS90
-                class ASZ_SCS90_rd_sd: ASZ_SCS90_rd
-                class ASZ_SCS90_rd_2: ASZ_SCS90_rd
-                    class ASZ_SCS90_rd_2_sd: ASZ_SCS90_rd_2
+        // class ASZ_AR7090: ASZ_AR7090_base
+        //     class ASZ_AR7090_rd: ASZ_AR7090
+        //     class ASZ_AR7090_ag: ASZ_AR7090 // Beretta AR 70/90 Acog
+        //     class ASZ_AR7090_gl: ASZ_AR7090
+        //     class ASZ_AR7090_scoped: ASZ_AR7090 //Beretta AR 70/90 Sharpshooter
+        //         class ASZ_AR7090_scoped_sd: ASZ_AR7090_scoped // Beretta AR 70/90 Sharpshooter SD
+        // class ASZ_SC90: ASZ_AR7090_base // Beretta SC 70/90
+        //     class ASZ_SC90_rd: ASZ_SC90
+        //     class ASZ_SC90_rd: ASZ_SC90
+        //     class ASZ_SC90_ag: ASZ_SC90
+        //     class ASZ_SC90_gl: ASZ_SC90
+        //     class ASZ_SC90_gl_ag: ASZ_SC90_gl
+        // class ASZ_SCS90: ASZ_AR7090_base
+        //     class ASZ_SCS90_rd: ASZ_SCS90
+        //         class ASZ_SCS90_rd_sd: ASZ_SCS90_rd
+        //         class ASZ_SCS90_rd_2: ASZ_SCS90_rd
+        //             class ASZ_SCS90_rd_2_sd: ASZ_SCS90_rd_2
     // ARX160 (https://www.militarypedia.it/beretta-arx-160-e-varianti/)
     class ASZ_ARX160_base: Rifle_Base_F {
         ACE_barrelTwist = 177.8; // 1:7in twist
