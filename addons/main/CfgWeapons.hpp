@@ -413,7 +413,7 @@ class CfgWeapons {
         ACE_barrelLength = 491; // PedagneMod
         ACE_twistDirection = 1;
     };
-    // M-GUN (Machine gun)
+    // M_GUN (Machine gun)
     class Rifle_Long_Base_F;
     class ASZ_M249_base: Rifle_Long_Base_F {
         ACE_barrelTwist = 177.8;
@@ -432,5 +432,77 @@ class CfgWeapons {
         ACE_barrelLength = 565;
         ACE_twistDirection = 1;
         ACE_Overheating_allowSwapBarrel = 1;
+    };
+    // M_PISTOLS
+    class FN_FAL;
+    class Pistol_Base_F;
+    class ASZ_PM12: Rifle_Base_F {
+        ACE_barrelTwist = 145; // Pedagne value
+        ACE_barrelLength = 200;
+        ACE_twistDirection = 1;
+    };
+    class ASZ_MAB: FN_FAL {
+        ACE_barrelTwist = 203.2; // Pedagne value
+        ACE_barrelLength = 533; // !!!Not matching with online values
+        ACE_twistDirection = 1;
+    };
+    class ASZ_MP5SD: Rifle_Base_F {
+        ACE_barrelTwist = 160; // online 1:10 in >> 254mm
+        ACE_barrelLength = 225;  // online  146mm
+        ACE_twistDirection = 1;
+    };
+    class ASZ_MP5A5: ASZ_MP5SD {
+        ACE_barrelTwist = 160; // online 1:10 in >> 254mm
+        ACE_barrelLength = 225;
+        ACE_twistDirection = 1;
+    };
+    class ASZ_M92: Pistol_Base_F {
+        ACE_barrelTwist = 248.92; // Pedagne
+        ACE_barrelLength = 125;
+        ACE_twistDirection = 1;
+    };
+    class ASZ_M84: ASZ_M92 {
+        ACE_barrelTwist = 220; // Pedagne
+        ACE_barrelLength = 97; // Pedagne
+        ACE_twistDirection = 1;
+    };
+    class ASZ_glock17: Pistol_Base_F {
+        ACE_barrelTwist = 248.92; // Pedagne
+        ACE_barrelLength = 114;
+        ACE_twistDirection = 1;
+    };
+    // McMillan
+    class LRR_base_F;
+	class GM6_base_F;
+    class ASZ_MCM_tac50_base: GM6_base_F {
+        ACE_barrelTwist = 381;
+        ACE_barrelLength = 736.6;
+        ACE_twistDirection = 1;
+    };
+    // SPECIAL_GUN
+    class ASZ_SakoTRG42_base: GM6_base_F {
+        ACE_barrelTwist = 355.8; // Pedagne
+        ACE_barrelLength = 690;
+        ACE_twistDirection = 1;
+    };
+    class ASZ_M40A3_Green_base: LRR_base_F {
+        ACE_barrelTwist = 304.8; // different from Pedagne (??)
+        ACE_barrelLength = 635; // different from Pedagne (??)
+        ACE_twistDirection = 1;
+    };
+    class ASZ_M107_base: LRR_base_F {
+        ACE_barrelTwist = 381;
+        ACE_barrelLength = 736.6; 
+        ACE_twistDirection = 1;
+    };
+    class ASZ_M4A1: Rifle_Base_F {
+        ACE_barrelTwist = 177.8;
+        ACE_barrelLength = 370; // Pedagne 254 (??)
+        ACE_twistDirection = 1;
+    };
+    class ASZ_M1014: Rifle_Base_F {
+        ACE_barrelTwist = 0;
+        ACE_barrelLength = 470;
+        ACE_twistDirection = 0;
     };
 };
