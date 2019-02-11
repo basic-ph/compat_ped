@@ -6,13 +6,13 @@ class CfgWeapons {
     // Pilots' uniforms
     class Uniform_Base;
     class ASZ_uniform_Pilot_AM: Uniform_Base {
-        //ace_gforcecoef = 0.55;
+        ACE_GForceCoef = 0.8;
     };
     class ASZ_uniform_Pilot_MM: Uniform_Base {
-        //ace_gforcecoef = 0.55;
+        ACE_GForceCoef = 0.8;
     };
     class ASZ_uniform_Pilot_CC: Uniform_Base {
-        //ace_gforcecoef = 0.55;
+        ACE_GForceCoef = 0.8;
     };
     // Pilots' and crew's helmets
     class InventoryItem_Base_F;
