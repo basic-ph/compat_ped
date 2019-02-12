@@ -58,6 +58,7 @@ class CfgAmmo {
         ACE_muzzleVelocities[]={723, 764, 796, 825, 843, 866, 878, 892, 906, 915, 922, 900};
         ACE_barrelLengths[]={210.82, 238.76, 269.24, 299.72, 330.2, 360.68, 391.16, 419.1, 449.58, 480.06, 508.0, 609.6};
     };
+    class B_127x99_Ball;
     class ASZ_127x99_Ball: B_127x99_Ball {
         ACE_caliber=12.954;
         ACE_bulletLength=58.674;
