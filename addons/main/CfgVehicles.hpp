@@ -1,18 +1,13 @@
-/*
-transportAmmo = 0;
-transportFuel = 0;
-transportRepair = 0;
-*/
-class CfgVehicles {
 
+class CfgVehicles {
     // Tracked
     class Tank;
     class ASZ_Tank;
     class ASZ_Ariete: ASZ_Tank {
-        ace_refuel_fuelCapacity = 1200; // to be found
+        ace_refuel_fuelCapacity = 1200; // real value needed
     };
     class ASZ_Leopard: ASZ_Ariete {
-        ace_refuel_fuelCapacity = 0; // to be found
+        ace_refuel_fuelCapacity = 1160; // from BWMod
     };
     class ASZ_VCC2_EI: ASZ_Tank {
         ace_refuel_fuelCapacity = 330;
@@ -24,7 +19,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 360;
     };
     class ASZ_ArisGator_M2: ASZ_VCC2_EI {
-        ace_refuel_fuelCapacity = 0; // to be found
+        ace_refuel_fuelCapacity = 300; // M113 value
     };
     class ASZ_LVTP7_EI: ASZ_Tank {
         ace_refuel_fuelCapacity = 680;
@@ -33,10 +28,9 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 360;
     };
     class ASZ_M548_ammo: ASZ_Tank { // NOT FOUND IN GAME
-        ace_refuel_fuelCapacity = 397; // check ammo supply question
+        ace_refuel_fuelCapacity = 397;
     };
-
-
+    // Wheel
     class ASZ_Car_Base;
     class ASZ_LR90_EI: ASZ_Car_Base {
         ace_refuel_fuelCapacity = 60;
@@ -55,13 +49,10 @@ class CfgVehicles {
         transportFuel = 0;
         transportRepair = 0;
         ace_refuel_fuelCapacity = 80;
-        //ace_repair_canRepair = 1;
     };
-
     class ASZ_VTML_EI_M2: ASZ_Car_Base {
         ace_refuel_fuelCapacity = 130;
     };
-
     class ASZ_Truck_Base;
     class ASZ_ACM904x4_EI: ASZ_Truck_Base {
          ace_refuel_fuelCapacity = 145;
@@ -88,7 +79,6 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 145;
         ace_refuel_fuelCargo = 2000;
     };
-
     class ASZ_ACTL4x4_EI: ASZ_ACM904x4_EI {
         ace_refuel_fuelCapacity = 300;
     };
@@ -113,11 +103,9 @@ class CfgVehicles {
     class ASZ_ACTL6x6_EI_repair: ASZ_ACTL6x6_EI_logistic {
         transportRepair = 0;
         ace_refuel_fuelCapacity = 300;
-        //ace_repair_canRepair = 1;
     };
     class ASZ_ACTL6x6_MM_repair: ASZ_ACTL6x6_EI_repair {
         transportRepair = 0;
         ace_refuel_fuelCapacity = 300;
-        //ace_repair_canRepair = 1;
     };
 };
