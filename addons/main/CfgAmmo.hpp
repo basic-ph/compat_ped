@@ -140,53 +140,9 @@ class CfgAmmo {
     };
 
     class ASZ_PZF3_HLPAT: Rocketbase {
-        //
+        ace_frag_skip =1
     };
     class ASZ_M_Stinger_AA: MissileBase {
         //
     };
-
-    // FROM VEHICLE WEAPONS
-    /*
-    class LaserBombCore
-    class M_Sidewinder_AA_ASZ: MissileBase {
-    class M_AIM_120_AA_ASZ: MissileBase {
-    class M_Maverick_AT_ASZ: MissileBase {
-    class B_Gbu12_ASZ: LaserBombCore {
-    class M_AGM_114_ASZ: MissileBase
-    class M_SPIKE_MR_ASZ: MissileBase
-    class M_SPIKE_MR_short_ASZ: MissileBase
-    class M_SPIKE_ER_ASZ: MissileBase
-    class M_Stinger_ASZ: MissileBase
-    class M_AT5_AT: MissileBase
-    class B_20x102mm_AP_ASZ: BulletBase
-    class R_70mm_HE_ASZ: RocketBase
-    class R_70mm_HEG_ASZ: R_70mm_HE_ASZ
-    class R_80mm_HE_ASZ: MissileBase
-    class B_762x51_Ball_ASZ: B_762x51_Ball // MG3 mounted on vehicles
-    class B_127x99_Ball_White_Tracer_ASZ: B_127x99_Ball // M2 mounted
-    class B_127x99_Ball_M3P_Red_Tracer_ASZ: B_127x99_Ball_White_Tracer_ASZ // M2 mounted
-    class M_FFAR_ASZ: MissileBase
-    class B_137x25mm_ASZ: BulletBase // USAGE NOT FOUND
-    class M_AS12_ASZ: MissileBase
-    class M_MarteMK2a_ASZ: MissileBase
-    class Sh_120_SABOT_ASZ: ShellBase
-    class Sh_120_HE_ASZ: ShellBase
-    class Sh_105_HE_ASZ: ShellBase
-    class Sh_105_SABOT_ASZ: Sh_120_SABOT_ASZ
-    class G_40mm_HE: GrenadeBase
-    class B_25x184mmAA_ASZ: BulletBase
-    class B_25x184mm_HE_ASZ: BulletBase
-    class B_25x184mm_HEI_ASZ: B_25x184mm_HE_ASZ
-    class B_25x184mm_AP_ASZ: BulletBase
-    class M_TOW_AT_ASZ: MissileBase
-    class M_TOW2_AT_ASZ: M_TOW_AT_ASZ
-    class Sh_155mm_AMOS: ShellBase
-    class Sh_107_HE_ASZ: Sh_155mm_AMOS
-    class Sh_107_ILLUM_ASZ: FlareCore
-    class Sh_107_WP_ASZ: SubmunitionBase
-    class B_30x173mm_API_ASZ: BulletBase
-    class B_30x173mm_HEI_ASZ: BulletBase
-    class B_30x173mm_APFSDS_ASZ: BulletBase
-    */
 };
