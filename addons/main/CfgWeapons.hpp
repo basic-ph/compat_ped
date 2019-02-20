@@ -2,17 +2,16 @@
 //ace_hearing_protection = 0.85; ace_hearing_lowerVolume = 0.6;
 //ace_hearing_protection = 0.75; ace_hearing_lowerVolume = 0;
 class CfgWeapons {
-
     // Pilots' uniforms
     class Uniform_Base;
     class ASZ_uniform_Pilot_AM: Uniform_Base {
-        ACE_GForceCoef = 0.8;
+        ace_gforcecoef = 0.8;
     };
     class ASZ_uniform_Pilot_MM: Uniform_Base {
-        ACE_GForceCoef = 0.8;
+        ace_gforcecoef = 0.8;
     };
     class ASZ_uniform_Pilot_CC: Uniform_Base {
-        ACE_GForceCoef = 0.8;
+        ace_gforcecoef = 0.8;
     };
     // Pilots' and crew's helmets
     class InventoryItem_Base_F;
@@ -54,7 +53,7 @@ class CfgWeapons {
         ace_hearing_protection = 0.75;
         ace_hearing_lowerVolume = 0;
     };
-    class ASZ_mich_2000_vegecam : ItemCore { //sons: desert, wood
+    class ASZ_mich_2000_vegecam : ItemCore {
         ace_hearing_protection = 0.75;
         ace_hearing_lowerVolume = 0
     };
@@ -83,39 +82,6 @@ class CfgWeapons {
 	class HMG_M2;
 	class GMG_20mm;
     class MGun;
-
-    // class Sidewinder_Laucher8_ASZ: MissileLauncher
-    // class Sidewinder_Laucher4_ASZ: Sidewinder_Laucher8_ASZ
-    // class Sidewinder_Laucher2_ASZ: Sidewinder_Laucher8_ASZ
-    // class AIM_120_Laucher8_ASZ: MissileLauncher
-    // class AIM_120_Laucher4_ASZ: AIM_120_Laucher8_ASZ
-    // class AIM_120_Laucher2_ASZ: AIM_120_Laucher8_ASZ
-    // class Maverick_Launcher6_ASZ: MissileLauncher
-    // class GBU12_Launcher_ASZ: RocketPods
-    // class HellFire_LauncherHeli_ASZ: MissileLauncher
-    // class SPIKE_Launcher2_ASZ: MissileLauncher
-    // class SPIKE_LauncherHeli_ASZ: MissileLauncher
-    // class Stinger_Launcher4_ASZ: MissileLauncher
-    // class M197_ASZ: CannonCore // Attack helicopter cannon
-    // class 70mm_RocketLauncher_ASZ: RocketPods
-    // class 80mm_RocketLauncher_ASZ: 70mm_RocketLauncher_ASZ
-    // class TwinM134: MGunCore // minigun
-    // class FFARLauncher: RocketPods
-    // class GAU12: CannonCore
-    // class MG3_ASZ: MGun
-    // class MG3_ASZ_2: MG3_ASZ
-    // class MG3_ASZ_3: MG3_ASZ
-    // class MG3_ASZ_4: MG3_ASZ
-    // class MG3_ASZ_BC: MG3_ASZ
-    // class MG3_ASZ_remote: MG3_ASZ
-    // class M240_veh: MGun
-    // class Coax_mg762_ASZ: M240_veh
-    // class M134: MGunCore
-    // class M134_2: M134
-    // class AS12_LauncherHeli_ASZ: MissileLauncher
-    // class MarteMK2a_LauncherHeli_ASZ: MissileLauncher
-    // class 30mm_ATK_Mk44_ASZ: CannonCore
-    // class 30mm_HE_ASZ: 30mm_ATK_Mk44_ASZ
     class 105mm_ASZ: CannonCore {
         ace_overpressure_angle = 90; // values taken from ACE3 Overepressure framework config
 		ace_overpressure_range = 50;
