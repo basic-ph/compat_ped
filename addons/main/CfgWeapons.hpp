@@ -69,7 +69,6 @@ class CfgWeapons {
         ace_hearing_protection = 0.75;
         ace_hearing_lowerVolume = 0
     };
-
     // Vehicle Weapons
     class CannonCore;
 	class autocannon_Base_F;
@@ -153,7 +152,7 @@ class CfgWeapons {
     // class ASZ_Aimpoint_PRO_blk: ItemCore
     // class ASZ_Aimpoint_PRO_des: ItemCore
     class ASZ_Acog: ItemCore {
-        // ace_scopeHeightAboveRail = 4.0;  // because opticType = 2; (see link above)
+        ace_scopeHeightAboveRail = 3.71;
         ace_scopeAdjust_vertical[] = {-4, 30};  // Maxmimum vertical adjustment limits
         ace_scopeAdjust_horizontal[] = {-6, 6};  // Maximum horizontal adjustment limits
         ace_scopeAdjust_verticalIncrement = 0.1;  // Vertical increment
@@ -175,14 +174,14 @@ class CfgWeapons {
         };
     };
     class ASZ_Leupold_MK4_CQT: ItemCore {
-        // ace_scopeHeightAboveRail = 4.5; // because opticType = 1;
+        ace_scopeHeightAboveRail= 4.11; // opticType = 1; --> ace_scopeHeightAboveRail = 4.5;
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
         ace_scopeAdjust_horizontalIncrement = 0.1;
     };
     class ASZ_Leupold_MK4_MRT_black: ItemCore {
-        // ace_scopeHeightAboveRail = 4.5; // because opticType = 1;
+        ace_scopeHeightAboveRail= 4.11;
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
@@ -197,7 +196,7 @@ class CfgWeapons {
         };
     };
     class ASZ_Leupold_MK4_MRT_des: ItemCore {
-        // ace_scopeHeightAboveRail = 4.5; // because opticType = 1;
+        ace_scopeHeightAboveRail= 4.11;
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
@@ -212,7 +211,7 @@ class CfgWeapons {
         };
     };
     class ASZ_Leupold_MK4_LRT_blk: ItemCore {
-        // ace_scopeHeightAboveRail = 4.0; // because opticType = 2;
+        ace_scopeHeightAboveRail= 4.11;
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
@@ -242,7 +241,7 @@ class CfgWeapons {
         };
     };
     class ASZ_Schmidt_Bender_LP: ItemCore { // http://www.schmidtundbender.de/en/products/police-and-military-forces/3-12x50-pm-iilpmtc.html
-        // ace_scopeHeightAboveRail = 4.0; // because opticType = 2; RHS >> ACE_ScopeHeightAboveRail = 4.2235;
+        ace_scopeHeightAboveRail = 3,38; // opticType = 2; then: ace_scopeHeightAboveRail = 4.0; // RHS >> ACE_ScopeHeightAboveRail = 4.2235;
         ace_scopeAdjust_vertical[] = {0, 22}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
@@ -286,67 +285,24 @@ class CfgWeapons {
             };
         };
     };
-
-    // class ASZ_Panzerfaust_optic1: ItemCore
-
-    // Silencers
-	// class InventoryMuzzleItem_Base_F;
-    // class ASZ_M_Pistol_sd: ItemCore
-    // class ASZ_Silencer_M9: ASZ_M_Pistol_sd
-    // class ASZ_Silencer_556_blk: ItemCore
-    // class ASZ_Silencer_556_des: ItemCore
-    // class ASZ_Silencer_762_blk: ItemCore
-    // class ASZ_Silencer_762_des: ItemCore
-    // class ASZ_Silencer_M4A1: ASZ_Silencer_556_blk
-    // class ASZ_Silencer_AR7090: ASZ_Silencer_556_blk
-    
-	// class InventoryFlashLightItem_Base_F;
-    // class ASZ_Pointer: ItemCore
-    // class ASZ_Pointer_blk: ItemCore
-    // class ASZ_Pointer_M4: ItemCore
-    // class ASZ_flashlight: ItemCore
-    // class ASZ_FlashLight_glock17: ASZ_flashlight
-
-	// class InventoryUnderItem_Base_F;
-    // class ASZ_Bipod_ARX_blk: ItemCore
-    // class ASZ_Bipod_ARX_des: ItemCore
-    // class ASZ_Bipod_SakoTRG42: ItemCore
-    // class ASZ_Bipod_M40A3: ItemCore
-    // class ASZ_Bipod_M107: ItemCore
-    // class ASZ_Bipod_M249: ItemCore
-    // class ASZ_Bipod_MG3: ItemCore
-    // class ASZ_Bipod_AR7090: ItemCore
-    // class ASZ_Bipod_tac50: ItemCore
-
     //ARX7090
     class Rifle_Base_F;
     class ASZ_AR7090_base: Rifle_Base_F {
         ACE_barrelTwist = 177.8;
         ACE_barrelLength = 450; 
-        ACE_twistDirection = 1; // Right handed is 1, Left is -1, none is 0 ,default is 1 
+        ACE_twistDirection = 1; // Right handed is 1, Left is -1, none is 0 ,default is 1
+        ace_railHeightAboveBore = 3.3;
+        ace_railBaseAngle = 0.0;
+        ace_ironSightBaseAngle = 0.0;
     };
-        // class ASZ_AR7090: ASZ_AR7090_base
-        //     class ASZ_AR7090_rd: ASZ_AR7090
-        //     class ASZ_AR7090_ag: ASZ_AR7090 // Beretta AR 70/90 Acog
-        //     class ASZ_AR7090_gl: ASZ_AR7090
-        //     class ASZ_AR7090_scoped: ASZ_AR7090 //Beretta AR 70/90 Sharpshooter
-        //         class ASZ_AR7090_scoped_sd: ASZ_AR7090_scoped // Beretta AR 70/90 Sharpshooter SD
-        // class ASZ_SC90: ASZ_AR7090_base // Beretta SC 70/90
-        //     class ASZ_SC90_rd: ASZ_SC90
-        //     class ASZ_SC90_rd: ASZ_SC90
-        //     class ASZ_SC90_ag: ASZ_SC90
-        //     class ASZ_SC90_gl: ASZ_SC90
-        //     class ASZ_SC90_gl_ag: ASZ_SC90_gl
-        // class ASZ_SCS90: ASZ_AR7090_base
-        //     class ASZ_SCS90_rd: ASZ_SCS90
-        //         class ASZ_SCS90_rd_sd: ASZ_SCS90_rd
-        //         class ASZ_SCS90_rd_2: ASZ_SCS90_rd
-        //             class ASZ_SCS90_rd_2_sd: ASZ_SCS90_rd_2
     // ARX160 (https://www.militarypedia.it/beretta-arx-160-e-varianti/)
     class ASZ_ARX160_base: Rifle_Base_F {
         ACE_barrelTwist = 177.8; // 1:7in twist
         ACE_barrelLength = 406; 
-        ACE_twistDirection = 1; // Right handed is 1, Left is -1, none is 0 ,default is 1 
+        ACE_twistDirection = 1; // Right handed is 1, Left is -1, none is 0 ,default is 1
+        ace_railHeightAboveBore = 4.91;
+        ace_railBaseAngle = 0.0;
+        ace_ironSightBaseAngle = 1.22; 
     };
     class ASZ_ARX160;
     class ASZ_ARX160_GLS_CC: ASZ_ARX160 { // short
