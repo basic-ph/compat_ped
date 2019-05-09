@@ -327,12 +327,6 @@ class CfgWeapons {
         ACE_barrelLength = 406; 
         ACE_twistDirection = 1;
     };
-    // BM59
-    class ASZ_FALBM59_base: Rifle_Base_F {
-        ACE_barrelTwist = 177.8;
-        ACE_barrelLength = 491; // PedagneMod
-        ACE_twistDirection = 1;
-    };
     // M_GUN (Machine gun)
     class Rifle_Long_Base_F;
     class ASZ_M249_base: Rifle_Long_Base_F {
@@ -354,18 +348,7 @@ class CfgWeapons {
         ACE_Overheating_allowSwapBarrel = 1;
     };
     // M_PISTOLS
-    class FN_FAL;
     class Pistol_Base_F;
-    class ASZ_PM12: Rifle_Base_F {
-        ACE_barrelTwist = 145; // Pedagne value
-        ACE_barrelLength = 200;
-        ACE_twistDirection = 1;
-    };
-    class ASZ_MAB: FN_FAL {
-        ACE_barrelTwist = 203.2; // Pedagne value
-        ACE_barrelLength = 533; // !!!Not matching with online values
-        ACE_twistDirection = 1;
-    };
     class ASZ_MP5SD: Rifle_Base_F {
         ACE_barrelTwist = 160; // online 1:10 in >> 254mm
         ACE_barrelLength = 225;  // online  146mm
@@ -425,4 +408,20 @@ class CfgWeapons {
         ACE_barrelLength = 470;
         ACE_twistDirection = 0;
     };
+    // BM59
+    // class ASZ_FALBM59_base: Rifle_Base_F {
+    //     ACE_barrelTwist = 177.8;
+    //     ACE_barrelLength = 491; // PedagneMod
+    //     ACE_twistDirection = 1;
+    // };
+    //class ASZ_PM12: Rifle_Base_F {
+    //     ACE_barrelTwist = 145; // Pedagne value
+    //     ACE_barrelLength = 200;
+    //     ACE_twistDirection = 1;
+    // };
+    // class ASZ_MAB: FN_FAL {
+    //     ACE_barrelTwist = 203.2; // Pedagne value
+    //     ACE_barrelLength = 533; // !!!Not matching with online values
+    //     ACE_twistDirection = 1;
+    // };
 };
