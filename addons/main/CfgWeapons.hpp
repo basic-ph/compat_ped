@@ -152,14 +152,14 @@ class CfgWeapons {
     // class ASZ_Aimpoint_PRO_blk: ItemCore
     // class ASZ_Aimpoint_PRO_des: ItemCore
     class ASZ_Acog: ItemCore {
-        ace_scopeHeightAboveRail = 3.71;
-        ace_scopeAdjust_vertical[] = {-4, 30};  // Maxmimum vertical adjustment limits
-        ace_scopeAdjust_horizontal[] = {-6, 6};  // Maximum horizontal adjustment limits
-        ace_scopeAdjust_verticalIncrement = 0.1;  // Vertical increment
-        ace_scopeAdjust_horizontalIncrement = 0.1;  // Horizontal increment
+        ace_scopeHeightAboveRail = 4.8;
+        ace_scopeAdjust_vertical[] = { 0, 0};  // Maxmimum vertical adjustment limits
+        ace_scopeAdjust_horizontal[] = { 0, 0};  // Maximum horizontal adjustment limits
+        ace_scopeAdjust_verticalIncrement = 0;  // Vertical increment
+        ace_scopeAdjust_horizontalIncrement = 0;  // Horizontal increment
     };
     class ASZ_AMS: ItemCore {
-        ace_scopeHeightAboveRail = 0.0; // SET THIS!!!
+        ace_scopeHeightAboveRail = 3.65;
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
@@ -174,14 +174,14 @@ class CfgWeapons {
         };
     };
     class ASZ_Leupold_MK4_CQT: ItemCore {
-        ace_scopeHeightAboveRail= 4.11; // opticType = 1; --> ace_scopeHeightAboveRail = 4.5;
+        ace_scopeHeightAboveRail= 4.37; // opticType = 1; --> ace_scopeHeightAboveRail = 4.5;
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
         ace_scopeAdjust_horizontalIncrement = 0.1;
     };
     class ASZ_Leupold_MK4_MRT_black: ItemCore {
-        ace_scopeHeightAboveRail= 4.11;
+        ace_scopeHeightAboveRail= 2.61;
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
@@ -196,7 +196,7 @@ class CfgWeapons {
         };
     };
     class ASZ_Leupold_MK4_MRT_des: ItemCore {
-        ace_scopeHeightAboveRail= 4.11;
+        ace_scopeHeightAboveRail= 2.61;
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
@@ -211,7 +211,7 @@ class CfgWeapons {
         };
     };
     class ASZ_Leupold_MK4_LRT_blk: ItemCore {
-        ace_scopeHeightAboveRail= 4.11;
+        ace_scopeHeightAboveRail= 3.16;
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
@@ -226,7 +226,7 @@ class CfgWeapons {
         };
     };
     class ASZ_Leupold_VXR_Patrol: ItemCore {
-        // ace_scopeHeightAboveRail = 4.5; // because opticType = 1;
+        ace_scopeHeightAboveRail = 3.8; // opticType = 1; --> ace_scopeHeightAboveRail = 4.5;
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
@@ -241,7 +241,7 @@ class CfgWeapons {
         };
     };
     class ASZ_Schmidt_Bender_LP: ItemCore { // http://www.schmidtundbender.de/en/products/police-and-military-forces/3-12x50-pm-iilpmtc.html
-        ace_scopeHeightAboveRail = 3,38; // opticType = 2; then: ace_scopeHeightAboveRail = 4.0; // RHS >> ACE_ScopeHeightAboveRail = 4.2235;
+        ace_scopeHeightAboveRail = 2.7; // opticType = 2; then: ace_scopeHeightAboveRail = 4.0; // RHS >> ACE_ScopeHeightAboveRail = 4.2235;
         ace_scopeAdjust_vertical[] = {0, 22}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
@@ -256,7 +256,7 @@ class CfgWeapons {
         };
     };
     class ASZ_Tasco_Pronghorn: ItemCore {
-        // ace_scopeHeightAboveRail = 4.0; // because opticType = 2;
+        ace_scopeHeightAboveRail = 3.1; // opticType = 2; --> ace_scopeHeightAboveRail = 4.0;
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
@@ -271,7 +271,7 @@ class CfgWeapons {
         };
     };
     class ASZ_HWTS: ItemCore { // AN/PAS-13(V)3 Heavy Weapon Thermal Sight (HWTS)
-        // ace_scopeHeightAboveRail = 4.0; //  opticType NOT FOUND so ??
+        ace_scopeHeightAboveRail = 10.23; //  opticType NOT FOUND so ??
         ace_scopeAdjust_vertical[] = {-4, 30}; 
         ace_scopeAdjust_horizontal[] = {-6, 6}; 
         ace_scopeAdjust_verticalIncrement = 0.1;
