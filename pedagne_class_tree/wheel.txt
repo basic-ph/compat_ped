@@ -1,0 +1,59 @@
+# WHEEL
+ASZ_Car_base
+    ASZ_LR90_EI *
+        ASZ_LR90_EIs
+        ASZ_LR90_MM
+        ASZ_LR90_MMs
+        ASZ_LR90_CC
+        ASZ_LR90_M2
+            ASZ_LR90_MK19
+            ASZ_LR90_TOW
+        ASZ_LR110_CC *
+        ASZ_LR110_CCpara
+        ASZ_LR110_AM
+        ASZ_LR110_CCpara_MG3
+        ASZ_VM90_EI *
+            ASZ_VM90_MM
+            ASZ_VM90_AM
+            ASZ_VM90_EI_M2
+                ASZ_VM90_MM_M2
+                ASZ_VM90_AM_M2
+                ASZ_VM90_EI_P
+                    ASZ_VM90_CC_P
+            ASZ_VM90spop
+            ASZ_VM90_com
+            ASZ_VM90_EI_105
+                ASZ_VM90_MM_105
+            ASZ_VM90_EI_amb
+                ASZ_VM90_MM_amb
+                ASZ_VM90_AM_amb
+            ASZ_VM90_EI_rep
+                ASZ_VM90_MM_rep
+                ASZ_VM90_AM_rep
+    ASZ_VTML_EI_M2 *
+        ASZ_VTML_EI_M2protect
+        ASZ_VTML_long_range_EI_M2
+        ASZ_VTML_MM_M2
+        ASZ_VTML_MM_M2protect
+        ASZ_VTML_long_range_MM_M2
+        ASZ_VTML_des_EI_M2
+        ASZ_VTML_des_EI_M2protect
+        ASZ_VTML_des_long_range_EI_M2
+        ASZ_VTML_EI_TOW
+            ASZ_VTML_MM_TOW
+        ASZ_VTML_EI_MK19
+            ASZ_VTML_MM_MK19
+        ASZ_VTML_hitrole
+        ASZ_VTML_spop
+        ASZ_VTML_CCpara_M2
+        ASZ_VTML_EI_amb
+            ASZ_VTML_MM_amb
+ASZ_Truck_Base
+    ASZ_ACTL4x4_EI *
+        ASZ_ACTL4x4_MM
+        ASZ_ACTL6x6_EI_logistic *
+            ASZ_ACTL6x6_MM_logistic
+            ASZ_ACTL6x6_EI_fuel
+                ASZ_ACTL6x6_MM_fuel
+            ASZ_ACTL6x6_EI_repair
+                ASZ_ACTL6x6_MM_repair
