@@ -48,7 +48,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 130;
     };
     class ASZ_Truck_Base;
-    class ASZ_ACTL4x4_EI: ASZ_Truck_Base {
+    class ASZ_ACTL4x4_EI: ASZ_Truck_Base { // NOT FOUND IN GAME
         ace_refuel_fuelCapacity = 300;
     };
     // class ASZ_ACTL4x4_MM: ASZ_ACTL4x4_EI {
@@ -80,7 +80,8 @@ class CfgVehicles {
 
     // Wheel 2
     class ASZ_Wheeled_APC;
-    class ASZ_PUMA4x4_M2: ASZ_Wheeled_APC {
+    class ASZ_6614_EI;
+    class ASZ_PUMA4x4_M2: ASZ_6614_EI {  // future parent: ASZ_Wheeled_APC
         ace_refuel_fuelCapacity = 200;  // TODO find real value
     };
     // class ASZ_PUMA6x6_M2: ASZ_PUMA4x4_M2 {

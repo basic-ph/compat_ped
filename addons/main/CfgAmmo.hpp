@@ -140,7 +140,7 @@ class CfgAmmo {
     };
 
     class ASZ_PZF3_HLPAT: Rocketbase {
-        ace_frag_skip =1
+        ace_frag_skip =1;
     };
     class ASZ_M_Stinger_AA: MissileBase {
         //

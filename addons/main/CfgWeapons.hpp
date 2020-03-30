@@ -55,19 +55,19 @@ class CfgWeapons {
     };
     class ASZ_mich_2000_vegecam : ItemCore {
         ace_hearing_protection = 0.75;
-        ace_hearing_lowerVolume = 0
+        ace_hearing_lowerVolume = 0;
     };
     class ASZ_mich_2000_multiland : ItemCore {
         ace_hearing_protection = 0.75;
-        ace_hearing_lowerVolume = 0
+        ace_hearing_lowerVolume = 0;
     };
     class ASZ_mich_2002_green : ItemCore {
         ace_hearing_protection = 0.75;
-        ace_hearing_lowerVolume = 0
+        ace_hearing_lowerVolume = 0;
     };
     class ASZ_mich_2002_desert : ItemCore {
         ace_hearing_protection = 0.75;
-        ace_hearing_lowerVolume = 0
+        ace_hearing_lowerVolume = 0;
     };
     // Vehicle Weapons
     class CannonCore;
