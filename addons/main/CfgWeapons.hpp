@@ -15,7 +15,7 @@ class CfgWeapons {
     };
     // Pilots' and crew's helmets
     class InventoryItem_Base_F;
-	class ItemCore;
+    class ItemCore;
     class ASZ_Helm_AirPilot: ItemCore {
         ace_hearing_protection = 0.85;
         ace_hearing_lowerVolume = 0.6;
@@ -71,41 +71,41 @@ class CfgWeapons {
     };
     // Vehicle Weapons
     class CannonCore;
-	class autocannon_Base_F;
-	class autocannon_35mm;
-	class MissileLauncher;
-	class RocketPods;
-	class HMG_127;
-	class LMG_RCWS;
-	class HMG_01;
-	class HMG_M2;
-	class GMG_20mm;
+    class autocannon_Base_F;
+    class autocannon_35mm;
+    class MissileLauncher;
+    class RocketPods;
+    class HMG_127;
+    class LMG_RCWS;
+    class HMG_01;
+    class HMG_M2;
+    class GMG_20mm;
     class MGun;
     class 105mm_ASZ: CannonCore {
         ace_overpressure_angle = 90; // values taken from ACE3 Overepressure framework config
-		ace_overpressure_range = 50;
-		ace_overpressure_damage = 0.85;
+        ace_overpressure_range = 50;
+        ace_overpressure_damage = 0.85;
     };
     // class L7_105_51_ASZ: 105mm_ASZ
     // class OTOBREDA_105_52_ASZ: 105mm_ASZ
     // class 105mm_NoRecoil_ASZ: 105mm_ASZ
     class 155mm_ASZ: CannonCore {
         ace_overpressure_angle = 90; // values taken from ACE3 Overepressure framework config
-		ace_overpressure_range = 60;
-		ace_overpressure_damage = 1;
+        ace_overpressure_range = 60;
+        ace_overpressure_damage = 1;
     };
     // class L52_155_52_ASZ: 155mm_ASZ
     // class M284_155_39_ASZ: 155mm_ASZ
     class 120mm_ASZ: CannonCore {
         ace_overpressure_angle = 90; // values taken from ACE3 Overepressure framework config
-		ace_overpressure_range = 50;
-		ace_overpressure_damage = 0.85;
+        ace_overpressure_range = 50;
+        ace_overpressure_damage = 0.85;
     };
     // class OTOMELARA_120_44_ASZ: 120mm_ASZ
     class M107mm_ASZ: CannonCore {
         ace_overpressure_angle = 90; // values taken from ACE3 Overepressure framework config
-		ace_overpressure_range = 50;
-		ace_overpressure_damage = 0.85;
+        ace_overpressure_range = 50;
+        ace_overpressure_damage = 0.85;
     };
     // class M2: HMG_M2
     // class M2_remote: M2
@@ -123,18 +123,18 @@ class CfgWeapons {
     class Launcher_Base_F;
     class ASZ_Launch_Stinger: Launcher_Base_F {
         ace_overpressure_angle = 45;
-		ace_overpressure_range = 15;
-		ace_overpressure_damage = 0.3;
+        ace_overpressure_range = 15;
+        ace_overpressure_damage = 0.3;
     };
     // AT    
     class launch_O_Titan_F;
     class ASZ_Launch_Spike: launch_O_Titan_F {
         ace_javelin_enabled = 1;
-		//modelOptics = "\z\ace\addons\javelin\data\reticle_titan.p3d"; // not sure if is needed
-		canLock = 0;
-		ace_overpressure_angle = 30;
-		ace_overpressure_range = 2;
-		ace_overpressure_damage = 0.5;
+        //modelOptics = "\z\ace\addons\javelin\data\reticle_titan.p3d"; // not sure if is needed
+        canLock = 0;
+        ace_overpressure_angle = 30;
+        ace_overpressure_range = 2;
+        ace_overpressure_damage = 0.5;
     };
     class ASZ_SWM_pzfaust3_base;
     class ASZ_SWM_pzfaust3: ASZ_SWM_pzfaust3_base { // values taken from BWA compat
@@ -145,7 +145,7 @@ class CfgWeapons {
 
     // Scopes
     // https://github.com/acemod/ACE3/blob/master/addons/scopes/functions/fnc_getBoreHeight.sqf
-	class InventoryOpticsItem_Base_F;
+    class InventoryOpticsItem_Base_F;
     // class ASZ_Eotech_des: ItemCore
     // class ASZ_Eotech_blk: ItemCore
     // class ASZ_Aimpoint_COMPM4S: ItemCore
@@ -369,7 +369,7 @@ class CfgWeapons {
     };
     // McMillan
     class LRR_base_F;
-	class GM6_base_F;
+    class GM6_base_F;
     class ASZ_MCM_tac50_base: GM6_base_F {
         ACE_barrelTwist = 381;
         ACE_barrelLength = 736.6;

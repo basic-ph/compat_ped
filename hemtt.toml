@@ -1,0 +1,16 @@
+name = "ACE Compat - PedagneMod"
+prefix = "cped"
+author = "basic-ph"
+
+files = [
+    "mod.cpp",
+    "README.md",
+    "logo.paa"
+]
+
+releasebuild = [
+    "@zip cped_{{semver.major}}.{{semver.minor}}.{{semver.patch}}"
+]
+
+[header_exts]
+version= "{{git \"id 8\"}}"

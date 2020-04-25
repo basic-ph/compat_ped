@@ -1,8 +1,9 @@
-release/*
-*.cache
-*.pbo
-texHeaders.bin
-*.swp
-*.swo
+hemtt.exe
+.hemtt/local
+keys/*
+releases/*
 *.biprivatekey
-Thumbs.db
+*.pbo
+*.bisign
+*.cache
+
