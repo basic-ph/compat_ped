@@ -1,4 +1,4 @@
-# compat_ped
+# ACE Compat - PedagneMod
 ACE3 compatibility for PedagneMod
 
-PedagneMod on Steam Workshop >[here](https://steamcommunity.com/sharedfiles/filedetails/?id=853934161)<
+[PedagneMod on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=853934161)
