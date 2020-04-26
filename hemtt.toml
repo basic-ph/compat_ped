@@ -5,7 +5,8 @@ author = "basic-ph"
 files = [
     "mod.cpp",
     "README.md",
-    "logo.paa"
+    "logo_cped.paa",
+    "LICENSE"
 ]
 
 releasebuild = [
