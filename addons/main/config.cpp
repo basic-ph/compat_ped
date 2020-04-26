@@ -10,7 +10,7 @@ class CfgPatches {
         author = "ACE-Team";
         authors[] = {"basic-ph"};
         url = "https://github.com/basic-ph/compat_ped";
-        VERSION_CONFIG;
+        // VERSION_CONFIG;
     };
 };
 

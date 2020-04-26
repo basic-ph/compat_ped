@@ -40,11 +40,6 @@ class CfgAmmo {
         ACE_muzzleVelocities[]={340, 370, 400};
         ACE_barrelLengths[]={101.6, 127.0, 228.6};
     };
-    // class ASZ_B_9x19_MP5_Ball: ASZ_B_9x19_Ball
-    // class ASZ_B_9x19_MP5_SD: ASZ_B_9x19_SD
-    // class ASZ_B_9x19_MAB_Ball: ASZ_B_9x19_Ball
-    // class ASZ_B_9x19_PM12_Ball: ASZ_B_9x19_Ball
-    // class ASZ_B_9x19_PM12_SD: ASZ_B_9x19_SD
 
     class ASZ_B_556x45_SD: BulletBase {
         ACE_caliber=5.69;
@@ -72,7 +67,7 @@ class CfgAmmo {
         ACE_barrelLengths[]={736.6};
     };
     class ASZ_B_12Gauge_74Slug: BulletBase {
-        //
+        // TODO
     };
     class RH_B_762x51_Ball : BulletBase {
         ACE_caliber=7.823;
@@ -143,6 +138,6 @@ class CfgAmmo {
         ace_frag_skip =1;
     };
     class ASZ_M_Stinger_AA: MissileBase {
-        //
+        // TODO
     };
 };
