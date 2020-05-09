@@ -126,7 +126,7 @@ class CfgWeapons {
         ace_overpressure_range = 15;
         ace_overpressure_damage = 0.3;
     };
-    // AT    
+    // AT
     class launch_O_Titan_F;
     class ASZ_Launch_Spike: launch_O_Titan_F {
         ace_javelin_enabled = 1;
@@ -160,8 +160,8 @@ class CfgWeapons {
     };
     class ASZ_AMS: ItemCore {
         ace_scopeHeightAboveRail = 3.65;
-        ace_scopeAdjust_vertical[] = {-4, 30}; 
-        ace_scopeAdjust_horizontal[] = {-6, 6}; 
+        ace_scopeAdjust_vertical[] = {-4, 30};
+        ace_scopeAdjust_horizontal[] = {-6, 6};
         ace_scopeAdjust_verticalIncrement = 0.1;
         ace_scopeAdjust_horizontalIncrement = 0.1;
         class ItemInfo: InventoryOpticsItem_Base_F {
@@ -175,15 +175,23 @@ class CfgWeapons {
     };
     class ASZ_Leupold_MK4_CQT: ItemCore {
         ace_scopeHeightAboveRail= 4.37; // opticType = 1; --> ace_scopeHeightAboveRail = 4.5;
-        ace_scopeAdjust_vertical[] = {-4, 30}; 
-        ace_scopeAdjust_horizontal[] = {-6, 6}; 
+        ace_scopeAdjust_vertical[] = {-4, 30};
+        ace_scopeAdjust_horizontal[] = {-6, 6};
         ace_scopeAdjust_verticalIncrement = 0.1;
         ace_scopeAdjust_horizontalIncrement = 0.1;
+        class ItemInfo: InventoryOpticsItem_Base_F {
+            class OpticsModes {
+                class Mk4 {
+                    discreteDistance[] = {100}; // TODO check why not configured in Pedagne!
+                    discreteDistanceInitIndex = 0;
+                };
+            };
+        };
     };
     class ASZ_Leupold_MK4_MRT_black: ItemCore {
         ace_scopeHeightAboveRail= 2.61;
-        ace_scopeAdjust_vertical[] = {-4, 30}; 
-        ace_scopeAdjust_horizontal[] = {-6, 6}; 
+        ace_scopeAdjust_vertical[] = {-4, 30};
+        ace_scopeAdjust_horizontal[] = {-6, 6};
         ace_scopeAdjust_verticalIncrement = 0.1;
         ace_scopeAdjust_horizontalIncrement = 0.1;
         class ItemInfo: InventoryOpticsItem_Base_F {
@@ -197,8 +205,8 @@ class CfgWeapons {
     };
     class ASZ_Leupold_MK4_MRT_des: ItemCore {
         ace_scopeHeightAboveRail= 2.61;
-        ace_scopeAdjust_vertical[] = {-4, 30}; 
-        ace_scopeAdjust_horizontal[] = {-6, 6}; 
+        ace_scopeAdjust_vertical[] = {-4, 30};
+        ace_scopeAdjust_horizontal[] = {-6, 6};
         ace_scopeAdjust_verticalIncrement = 0.1;
         ace_scopeAdjust_horizontalIncrement = 0.1;
         class ItemInfo: InventoryOpticsItem_Base_F {
@@ -212,8 +220,8 @@ class CfgWeapons {
     };
     class ASZ_Leupold_MK4_LRT_blk: ItemCore {
         ace_scopeHeightAboveRail= 3.16;
-        ace_scopeAdjust_vertical[] = {-4, 30}; 
-        ace_scopeAdjust_horizontal[] = {-6, 6}; 
+        ace_scopeAdjust_vertical[] = {-4, 30};
+        ace_scopeAdjust_horizontal[] = {-6, 6};
         ace_scopeAdjust_verticalIncrement = 0.1;
         ace_scopeAdjust_horizontalIncrement = 0.1;
         class ItemInfo: InventoryOpticsItem_Base_F {
@@ -227,13 +235,13 @@ class CfgWeapons {
     };
     class ASZ_Leupold_VXR_Patrol: ItemCore {
         ace_scopeHeightAboveRail = 3.8; // opticType = 1; --> ace_scopeHeightAboveRail = 4.5;
-        ace_scopeAdjust_vertical[] = {-4, 30}; 
-        ace_scopeAdjust_horizontal[] = {-6, 6}; 
+        ace_scopeAdjust_vertical[] = {-4, 30};
+        ace_scopeAdjust_horizontal[] = {-6, 6};
         ace_scopeAdjust_verticalIncrement = 0.1;
         ace_scopeAdjust_horizontalIncrement = 0.1;
         class ItemInfo: InventoryOpticsItem_Base_F {
             class OpticsModes {
-                class Leupold_LR_optic {
+                class Leupold_VX_III_optic {
                     discreteDistance[] = {100};
                     discreteDistanceInitIndex = 0;
                 };
@@ -242,12 +250,12 @@ class CfgWeapons {
     };
     class ASZ_Schmidt_Bender_LP: ItemCore { // http://www.schmidtundbender.de/en/products/police-and-military-forces/3-12x50-pm-iilpmtc.html
         ace_scopeHeightAboveRail = 2.7; // opticType = 2; then: ace_scopeHeightAboveRail = 4.0; // RHS >> ACE_ScopeHeightAboveRail = 4.2235;
-        ace_scopeAdjust_vertical[] = {0, 22}; 
-        ace_scopeAdjust_horizontal[] = {-6, 6}; 
+        ace_scopeAdjust_vertical[] = {0, 22};
+        ace_scopeAdjust_horizontal[] = {-6, 6};
         ace_scopeAdjust_verticalIncrement = 0.1;
         ace_scopeAdjust_horizontalIncrement = 0.1;
         class ItemInfo: InventoryOpticsItem_Base_F {
-            class OpticsModes {
+            class SB_LP_optic {
                 class Leupold_LR_optic {
                     discreteDistance[] = {100};
                     discreteDistanceInitIndex = 0;
@@ -257,28 +265,13 @@ class CfgWeapons {
     };
     class ASZ_Tasco_Pronghorn: ItemCore {
         ace_scopeHeightAboveRail = 3.1; // opticType = 2; --> ace_scopeHeightAboveRail = 4.0;
-        ace_scopeAdjust_vertical[] = {-4, 30}; 
-        ace_scopeAdjust_horizontal[] = {-6, 6}; 
+        ace_scopeAdjust_vertical[] = {-4, 30};
+        ace_scopeAdjust_horizontal[] = {-6, 6};
         ace_scopeAdjust_verticalIncrement = 0.1;
         ace_scopeAdjust_horizontalIncrement = 0.1;
         class ItemInfo: InventoryOpticsItem_Base_F {
             class OpticsModes {
-                class Leupold_LR_optic {
-                    discreteDistance[] = {100};
-                    discreteDistanceInitIndex = 0;
-                };
-            };
-        };
-    };
-    class ASZ_HWTS: ItemCore { // AN/PAS-13(V)3 Heavy Weapon Thermal Sight (HWTS)
-        ace_scopeHeightAboveRail = 10.23; //  opticType NOT FOUND so ??
-        ace_scopeAdjust_vertical[] = {-4, 30}; 
-        ace_scopeAdjust_horizontal[] = {-6, 6}; 
-        ace_scopeAdjust_verticalIncrement = 0.1;
-        ace_scopeAdjust_horizontalIncrement = 0.1;
-        class ItemInfo: InventoryOpticsItem_Base_F {
-            class OpticsModes {
-                class Leupold_LR_optic {
+                class TP_optic {
                     discreteDistance[] = {100};
                     discreteDistanceInitIndex = 0;
                 };
@@ -289,7 +282,7 @@ class CfgWeapons {
     class Rifle_Base_F;
     class ASZ_AR7090_base: Rifle_Base_F {
         ACE_barrelTwist = 177.8;
-        ACE_barrelLength = 450; 
+        ACE_barrelLength = 450;
         ACE_twistDirection = 1; // Right handed is 1, Left is -1, none is 0 ,default is 1
         ace_railHeightAboveBore = 6.9;
         ace_railBaseAngle = 0.0;
@@ -298,11 +291,11 @@ class CfgWeapons {
     // ARX160 (https://www.militarypedia.it/beretta-arx-160-e-varianti/)
     class ASZ_ARX160_base: Rifle_Base_F {
         ACE_barrelTwist = 177.8; // 1:7in twist
-        ACE_barrelLength = 406; 
+        ACE_barrelLength = 406;
         ACE_twistDirection = 1; // Right handed is 1, Left is -1, none is 0 ,default is 1
         ace_railHeightAboveBore = 4.89;
         ace_railBaseAngle = 0.0;
-        ace_ironSightBaseAngle = 0.0; 
+        ace_ironSightBaseAngle = 0.0;
     };
     class ASZ_ARX160;
     class ASZ_ARX160_GLS_CC: ASZ_ARX160 { // short
@@ -313,7 +306,7 @@ class CfgWeapons {
     };
     class ASZ_ARX160SF_CC: ASZ_ARX160 { // short
         ACE_barrelLength = 305;
-    };       
+    };
     class ASZ_ARX160SF_GLS_CC: ASZ_ARX160 { // short
         ACE_barrelLength = 305;
     };
@@ -324,7 +317,7 @@ class CfgWeapons {
     class srifle_DMR_03_F;
     class APD_ARX200_base: srifle_DMR_03_F {
         ACE_barrelTwist = 177.8; // 1:7in twist
-        ACE_barrelLength = 406; 
+        ACE_barrelLength = 406;
         ACE_twistDirection = 1;
         ace_railHeightAboveBore = 4.37;
         ace_railBaseAngle = 0.0;
@@ -397,7 +390,7 @@ class CfgWeapons {
     };
     class ASZ_M107_base: LRR_base_F {
         ACE_barrelTwist = 381;
-        ACE_barrelLength = 736.6; 
+        ACE_barrelLength = 736.6;
         ACE_twistDirection = 1;
         ace_railHeightAboveBore = 3.23;
         ace_railBaseAngle = 0.0;
