@@ -278,21 +278,6 @@ class CfgWeapons {
             };
         };
     };
-    class ASZ_HWTS: ItemCore { // AN/PAS-13(V)3 Heavy Weapon Thermal Sight (HWTS)  // TODO REMOVE THIS!!!
-        ace_scopeHeightAboveRail = 10.23; //  opticType NOT FOUND so ??
-        ace_scopeAdjust_vertical[] = {-4, 30};
-        ace_scopeAdjust_horizontal[] = {-6, 6};
-        ace_scopeAdjust_verticalIncrement = 0.1;
-        ace_scopeAdjust_horizontalIncrement = 0.1;
-        class ItemInfo: InventoryOpticsItem_Base_F {
-            class OpticsModes {
-                class HWTS_optic {
-                    discreteDistance[] = {100};
-                    discreteDistanceInitIndex = 0;
-                };
-            };
-        };
-    };
     //ARX7090
     class Rifle_Base_F;
     class ASZ_AR7090_base: Rifle_Base_F {
