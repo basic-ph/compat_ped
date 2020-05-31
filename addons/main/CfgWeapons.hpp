@@ -226,7 +226,7 @@ class CfgWeapons {
         ace_scopeAdjust_horizontalIncrement = 0.1;
         class ItemInfo: InventoryOpticsItem_Base_F {
             class OpticsModes {
-                class Leupold_LR_optic {
+                class Snip {
                     discreteDistance[] = {100};
                     discreteDistanceInitIndex = 0;
                 };
@@ -255,8 +255,8 @@ class CfgWeapons {
         ace_scopeAdjust_verticalIncrement = 0.1;
         ace_scopeAdjust_horizontalIncrement = 0.1;
         class ItemInfo: InventoryOpticsItem_Base_F {
-            class SB_LP_optic {
-                class Leupold_LR_optic {
+            class OpticsModes {
+                class SB_LP_optic {
                     discreteDistance[] = {100};
                     discreteDistanceInitIndex = 0;
                 };
@@ -380,7 +380,7 @@ class CfgWeapons {
         ace_railBaseAngle = 0.0;
         ace_ironSightBaseAngle = 0.0;
     };
-    class ASZ_M40A3_Green_base: LRR_base_F {
+    class ASZ_M40A3_Green_base: Rifle_Long_Base_F {
         ACE_barrelTwist = 304.8; // different from Pedagne (??)
         ACE_barrelLength = 635; // different from Pedagne (??)
         ACE_twistDirection = 1;
